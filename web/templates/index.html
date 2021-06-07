@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="js.js"></script>
+    <script src="../static/js.js"></script>
     <meta charset="UTF-8">
     <title>GPT-2 Audience</title>
 </head>
@@ -22,16 +22,16 @@
         <div style="border: 1px solid blue; float: left; width 50%; padding:10px;">
             👍
             <br>
-            <textarea name="positive" cols="40" rows="5"></textarea>
+            <textarea id="positive" cols="40" rows="5"></textarea>
             <br>
-            <button name="btn_positive" onclick="positive()">submit</button>
+            <button id="btn_positive" onclick="process(this.id)">submit</button>
         </div>
         <div style="border: 1px solid red; float: left; width 50%; padding:10px;">
             👎
             <br>
-            <textarea name="negative" cols="40" rows="5"></textarea>
+            <textarea id="negative" cols="40" rows="5"></textarea>
             <br>
-            <button name="btn_negative" onclick="negative()">submit</button>
+            <button id="btn_negative" onclick="process(this.id)">submit</button>
         </div>
     </div>
 </body>
